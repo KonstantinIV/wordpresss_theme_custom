@@ -1,5 +1,6 @@
-
+ 
 <?php
+//Blog page
 get_header();
 ?>
     

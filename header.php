@@ -20,9 +20,9 @@
 <body>
     
     <header class="header text-center">	    
-	    <a class="site-title pt-lg-4 mb-0" href="index.html">
+	    <?php /*<a class="site-title pt-lg-4 mb-0" href="index.html">
             <?php echo get_bloginfo('name'); ?>
-        </a>
+        </a> */?>
         
 	    <nav class="navbar navbar-expand-lg navbar-dark" >
            
@@ -30,27 +30,31 @@
 			<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div id="navigation" class="collapse navbar-collapse flex-column" >
+			<div id="navigation" class="collapse navbar-collapse flex-row" >
                 <?php if(function_exists('the_custom_logo')){
 
                     $custom_logo_id = get_theme_mod('custom_logo');
                     $logo = wp_get_attachment_image_src($custom_logo_id);
                     
                 } ?>
-				<img class="mb-3 mx-auto logo" src="<?php echo $logo[0] ?>" alt="logo" >			
-				
-                <?php 
+				<img class="mb-3 mx-auto logo konsteus-logo" src="<?php echo $logo[0] ?>" alt="logo" >			
+                
+                
+                <?php
+                // ADD IN CUSTOMIZ PANEL IF YOU WANT HAVE AN ICON : <i class="fas fa-home fa-fw mr-2 "></i> 
                     wp_nav_menu(
                         array(
                             'menu' => 'primary',
                             'container' => '',
-                            'them_location => primary',
+                            'them_location' => 'primary' ,
+                            'menu_class' => 'navbar-nav konsteus-navbar-nav flex-row text-sm-center text-md-left',
                             'items_wrap' => '
                             <ul 
-                                id=" 
-                                class="navbar-nav flex-column text-sm-center text-md-left"
+                                id="" 
+                                class="%2$s "
                                 > %3$s
-                            </ul> ' 
+                            </ul> '
+
                             )
                     );
                 ?>
@@ -64,11 +68,15 @@
 
 
             <?php 
-                dynamic_sidebar('sidebar-1');
+            //social links
+               // dynamic_sidebar('sidebar-1');
             ?>
 		</nav>
     </header>
+
+    <?php /*
     <div class="main-wrapper">
 	    <header class="page-title theme-bg-light text-center gradient py-5">
 			<h1 class="heading"><?php  the_title();?> </h1>
-		</header>
+        </header>
+        */?>

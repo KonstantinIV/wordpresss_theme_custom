@@ -1,7 +1,7 @@
 /*
 Theme name:a
 Text domain: a
-Version: 1
+Version: 1.5
 Description: a
 Tags: a
 Author:a
@@ -102,14 +102,15 @@ h6 {
 .theme-bg-dark {
     background: var(--dark) !important
 }
-
+/* */
 .header {
+    margin-top:50px;
     position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
-    width: var(--sidebar-width);
-    background: var(--primary);
+    height: 200px;
+    width: 100%;
+    background: #fff941;
     color: #fff
 }
 .header .site-title {
@@ -740,3 +741,106 @@ div.comment:first-of-type {
 .comment-reply-title small a:hover {
 	text-decoration: underline;
 }
+
+
+
+
+
+
+
+/*********CUSTOM***********/
+.header .navbar .collapse .konsteus-navbar-nav {
+    list-style-type: none !important;
+    
+   /*background-color: red;*/
+ }
+
+ .konsteus-menuLink{
+     padding: 0px 20px;
+     color: black;
+ }
+
+ .konsteus-menuLink a{
+    color: black;
+}
+ .header {
+    height: 100px;
+    padding-bottom: 140px;
+}
+.konsteus-logo{
+    margin-bottom: 0px !important;
+}
+
+.header .nav-item  {
+    color: black;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin: 0px 6px;
+    /*border: 0px solid transparent;*/
+   
+}
+.header .nav-item:hover {
+    text-decoration: none;
+    
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px 8px;
+    
+
+}
+
+
+.header .nav-item a {
+    color: black;
+    font-size: 20px;
+   /* padding: 3px 10px;*/
+    
+
+}
+
+.header .nav-item  a:hover {
+    text-decoration: none;
+   color: rgb(66, 54, 54);
+    
+
+}
+.header .nav-item:active{
+   
+  /*  border: 2px solid black;*/
+
+    
+
+}
+/*highlight current menu items*/
+.current-menu-ancestor { 
+    border: 2px solid black;
+    border-radius: 5px;
+   
+}
+
+.current_page_item { 
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px 8px !important;
+}
+
+ul.sf-menu ul .current_page_item  { 
+    border: 2px solid black !important;
+    border-radius: 5px;
+    
+}
+
+.current_page_item:hover { 
+    padding: 4px 8px !important;
+
+}
+ul.sf-menu ul .current_page_item:hover  { 
+    padding: 4px 8px !important;
+    
+}
+.current-menu-ancestor:hover { 
+    padding: 4px 8px !important;
+    
+}
+
+
