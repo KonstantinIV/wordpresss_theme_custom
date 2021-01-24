@@ -75,9 +75,9 @@ function konsteus_widget_areas(){
     );
     register_sidebar(
         array(
-            'before_title' => '',
-            'after_title' => '',
-            'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
+            'before_title' => '<h4>',
+            'after_title' => '</h4>',
+            'before_widget' => '<ul class="social-list list-inline py-3 mx-auto konsteus-social-list">',
             'after_widget'  => '</ul>',
 
         

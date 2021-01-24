@@ -1,7 +1,8 @@
-<footer class="footer text-center py-2 theme-bg-dark">
-		   
-           <p class="copyright"><a href="https://youtube.com/FollowAndrew">FollowAndrew</a></p>
-          
+<footer class="footer text-center py-2 theme-bg-dark konsteus-footer">
+           
+        <?php 
+           //<p class="copyright"><a href="https://youtube.com/"></a></p>
+          ?>
            <?php 
                 dynamic_sidebar('footer-1');
             ?>

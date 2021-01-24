@@ -1,7 +1,7 @@
 /*
 Theme name:a
 Text domain: a
-Version: 1.5
+Version: 2.1
 Description: a
 Tags: a
 Author:a
@@ -104,8 +104,7 @@ h6 {
 }
 /* */
 .header {
-    margin-top:50px;
-    position: fixed;
+    
     left: 0;
     top: 0;
     height: 200px;
@@ -766,6 +765,11 @@ div.comment:first-of-type {
  .header {
     height: 100px;
     padding-bottom: 140px;
+
+}
+
+.footer{
+    position: fixed;
 }
 .konsteus-logo{
     margin-bottom: 0px !important;
@@ -842,5 +846,37 @@ ul.sf-menu ul .current_page_item:hover  {
     padding: 4px 8px !important;
     
 }
+body{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 115px !important;
+}
+
+.konsteus-footer{
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color : #1c1c1c !important;
+    color :gray;
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    position: absolute;
+    padding-bottom: 115px !important;
+}
+.konsteus-social-list{
+    margin: 0px !important;
+    flex-grow: 1;
+}
+
+.konsteus-front-page-title{
+    text-align: center;
+}
 
 
+.konsteus-article{
+    
+    padding: 0px !important;
+}
