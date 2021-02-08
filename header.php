@@ -73,6 +73,8 @@
             ?>
 		</nav>
     </header>
+    <div class="konsteus-header-body-container">
+
 
     <?php /*
     <div class="main-wrapper">

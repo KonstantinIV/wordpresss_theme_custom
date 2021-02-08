@@ -1,7 +1,7 @@
 /*
 Theme name:a
 Text domain: a
-Version: 2.1
+Version: 2.6
 Description: a
 Tags: a
 Author:a
@@ -109,7 +109,7 @@ h6 {
     top: 0;
     height: 200px;
     width: 100%;
-    background: #fff941;
+    background-color:#fff941;
     color: #fff
 }
 .header .site-title {
@@ -768,9 +768,7 @@ div.comment:first-of-type {
 
 }
 
-.footer{
-    position: fixed;
-}
+
 .konsteus-logo{
     margin-bottom: 0px !important;
 }
@@ -846,11 +844,7 @@ ul.sf-menu ul .current_page_item:hover  {
     padding: 4px 8px !important;
     
 }
-body{
-    min-height: 100vh;
-    position: relative;
-    padding-bottom: 115px !important;
-}
+
 
 .konsteus-footer{
     
@@ -859,12 +853,14 @@ body{
     width: 100%;
     background-color : #1c1c1c !important;
     color :gray;
-    height: 115px;
+    
     display: flex;
     flex-direction: row;
-    margin-top: 0px;
+    /*margin-top: 0px;
     position: absolute;
     padding-bottom: 115px !important;
+    height: 115px;
+    position: fixed;*/
 }
 .konsteus-social-list{
     margin: 0px !important;
@@ -879,4 +875,91 @@ body{
 .konsteus-article{
     
     padding: 0px !important;
+}
+
+.konsteus-header-body-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.konsteus-article-image{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.konsteus-article-horizontal-strip-1{
+    width:100%;
+    background-color:#1c1c1c;
+    height: fit-content;
+
+}
+.konsteus-article-horizontal-strip-container-1{
+    width:80%;
+    
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+
+}
+.konsteus-article-horizontal-strip-container-text-1{
+    flex-wrap: wrap;
+    display: flex;
+    height: fit-content;
+    padding-top: 30px;
+}
+.konsteus-article-horizontal-strip-2{
+    width:100%;
+    background-color:#fff941;
+    height: fit-content;
+
+}
+.konsteus-article-horizontal-strip-container-2{
+    width:80%;
+    
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+
+}
+.konsteus-article-horizontal-strip-container-text-2{
+    flex-wrap: wrap;
+    display: flex;
+    height: fit-content;
+    padding-top: 30px;
+}
+
+body{
+    flex-wrap: wrap;
+    display: flex;
+    height: fit-content;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+table {
+    border: 1px solid
+}
+thead {
+    border: 1px solid;
+    border-bottom: 2px solid;
+    font-size: 18px;
+}
+th {
+    border: 1px solid;
+    font-size: 18px;
+    padding-left: 10px;
+
+}
+td {
+    border: 1px solid;
+    font-size: 18px;
+    padding-left: 10px;
 }

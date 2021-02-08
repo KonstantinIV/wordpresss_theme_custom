@@ -1,4 +1,6 @@
 
+
+
 <?php
 get_header();
 ?>
@@ -17,8 +19,9 @@ get_header();
 		 ?>
 	    </article>
 	   
-    
 
+		<div>
+	
 	<?php
 get_footer();
 ?>
