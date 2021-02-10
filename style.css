@@ -1,7 +1,7 @@
 /*
 Theme name:a
 Text domain: a
-Version: 2.6
+Version: 2.9
 Description: a
 Tags: a
 Author:a
@@ -863,8 +863,11 @@ ul.sf-menu ul .current_page_item:hover  {
     position: fixed;*/
 }
 .konsteus-social-list{
-    margin: 0px !important;
+    
     flex-grow: 1;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: auto !important;
 }
 
 .konsteus-front-page-title{
@@ -873,7 +876,10 @@ ul.sf-menu ul .current_page_item:hover  {
 
 
 .konsteus-article{
-    
+    flex-wrap: wrap;
+    display: flex;
+    height: -webkit-fill-available;
+
     padding: 0px !important;
 }
 
@@ -887,12 +893,17 @@ ul.sf-menu ul .current_page_item:hover  {
 .konsteus-article-image{
     margin-top: auto;
     margin-bottom: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .konsteus-article-horizontal-strip-1{
     width:100%;
     background-color:#1c1c1c;
-    height: fit-content;
-
+    height:auto;
+    display: flex;
+    align-items: center;
 }
 .konsteus-article-horizontal-strip-container-1{
     width:80%;
@@ -901,7 +912,7 @@ ul.sf-menu ul .current_page_item:hover  {
     right:0;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: block;
     flex-direction: row;
 
 }
@@ -910,11 +921,14 @@ ul.sf-menu ul .current_page_item:hover  {
     display: flex;
     height: fit-content;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 .konsteus-article-horizontal-strip-2{
     width:100%;
     background-color:#fff941;
-    height: fit-content;
+    height:auto;
+    display: flex;
+    align-items: center;
 
 }
 .konsteus-article-horizontal-strip-container-2{
@@ -924,7 +938,7 @@ ul.sf-menu ul .current_page_item:hover  {
     right:0;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-flow: row-reverse;
 
@@ -934,6 +948,7 @@ ul.sf-menu ul .current_page_item:hover  {
     display: flex;
     height: fit-content;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 body{
