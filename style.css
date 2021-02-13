@@ -1,7 +1,7 @@
 /*
 Theme name:a
 Text domain: a
-Version: 2.9
+Version: 3.1
 Description: a
 Tags: a
 Author:a
@@ -959,22 +959,41 @@ body{
     min-height: 100vh;
 }
 
+
+/************HINNAKIRI***********************/
+
+.konsteus-hinnakiri-container{
+    width: 100%;
+    background-color: #ffed41;
+}
+.konsteus-hinnakiri-table-container{
+    width: 80%;
+    margin: 20px auto;
+}
+
 table {
-    border: 1px solid
+      border-collapse:separate;
+      border-spacing: 0px;
+      border: 1px solid;
+      border-radius: 3px;
 }
 thead {
     border: 1px solid;
-    border-bottom: 2px solid;
+    
     font-size: 18px;
+    border-top-left-radius: 3px;
 }
 th {
-    border: 1px solid;
+    
     font-size: 18px;
     padding-left: 10px;
-
+    border-bottom: 2px solid;
 }
 td {
     border: 1px solid;
     font-size: 18px;
     padding-left: 10px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }

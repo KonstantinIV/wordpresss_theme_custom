@@ -28,7 +28,7 @@ get_header();
 
 				    <img src="/wp-content/themes/konsteus/assets/images/aircan.svg" class="konsteus-article-image img-fluid" alt="Repair" width="250" height="250">
 					<div class="konsteus-article-horizontal-strip-container-text-2" >
-						<h1><span class="text-break">Tarbe</span>elektroonika Hooldus</h1>
+						<h1> Hooldus</h1>
 						<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 						 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
